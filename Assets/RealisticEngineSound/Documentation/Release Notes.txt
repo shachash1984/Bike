@@ -1,0 +1,56 @@
+Realistic Engine Sounds Lite: Release notes:
+
+v1.3
+- Added muffler pluck noise sound files, controller scripts for this and prefabs
+- Added shifting sound files, controller script for this and prefabs
+- Added an option to set Master Volume (can reduce engine sounds volume)
+- Added an option to add reverb zone with a preset
+- New controller script for Unity Standard Assets Car, this controller script now releases gas pedal at shifting
+- Modified the logic behind rpm limiting. If you disable rpm limiting no need to modify "High Vol Curve" any more
+- Removed "Max RPM Pitch Curve", script now using high rpm's pitch curve for rpm limiting
+- Removed "High Vol Reversing Curve", script now using "High Vol Curve"'s value for reversing
+- Updated demo scenes
+- Updated "car controllers to res" sccripts
+- Fixed a bug with RVP2 controller script, not detected gas pedal pressing in reverse gear
+- Fixed missing reverse gear sound clip in RVP2 prefabs
+- Updated documentation
+- Minor bugfixes
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+v1.2
+- All engine off sound files are remastered
+- Added a feature to set sound clips to "None", with this feature you can create prefabs with only 2-3 wav files for better optimisation on mobile devices
+- Added "Street" and "Track" prefabs for all engine packs. This prefabs use the same wav files, but with different settings and higher maximum pitch values
+- Added Street and Track prefabs to demo scenes
+- Added "Gas Pedal" button to "Slider" demo scenes for better engine sound simulation
+- Added two new, free engine packs "rotary_x8_free" and "i6_german_free. This sound packs are available for free in the Asset Store
+- Added "Start Engine" sounds for all engine packs
+- Some stock prefabs have new settings
+- Added a new demo scene for RCC_V3 "CAMERA_RCC_with_RES"
+- Added a new controller script for RCC_V3 "RCC_RES_camera". This controller script automatically switch between exterior and interior engine sounds when camera is changed. This script also fix the "shaking" car sound bug for TPS, FPS and FIXED camera views.
+- Added a new demo scene for EVP "CAMERA_EVP5_with_RES"
+- Added two new controller scripts for EVP "CameraControl" and "CameraControl_mobile". This controller scripts automatically switch between exterior and interior engine sounds when camera is changed. This script also fix the "shaking" car sound bug for SmoothFollow, MouseOrbit and AttachTo camera views.
+- Updated documentation
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+v1.1
+- Rewrited RES controller scripts for better optimisation
+- Controller scripts destroy audio sources that have 0 volume and recreate them when volume is more than Optimisation Level's value. Prefabs now may only play 2-3 or 4 audio sources at a time.
+- Added feature for smooth gas pedal pressing and releasing simulation. Now engine sounds more realistic when releasing the gas pedal at driving and pressing it again.
+- Added option to disable gas pedal pressing simulaton for joystick controlled games.
+- Added options for minimum and maximum audio distances.
+- Added Optimisation Level setting (0 to 0.25) - audio sources with volume value below this value will be destroyed.
+- Added interior sound wav files, prefabs and demo scenes
+- Added support for Randomation Vehicle Physics 2 (prefabs and demo scenes)
+- Added support for Edy's Vehicle Physics 5 (prefabs and demo scenes)
+- Added support for Realistic Car Controller V3 (prefabs and demo scenes)
+- All prefabs have new presets for better optimisation and more realistic sounding
+- All vehicle controller scripts have an option for release gas pedal at shifting for more realistic effect (except mobile verions and Unity Standard Asset's Car controller all versions)
+- All vehicle physics prefabs have easier inplementation. Just drag and drop the right prefab into the car gameobject and everything else is done by the controller script.
+- Minor fixes in demo scenes
+- Fixed wav files looping (removed "pluck" sound noise)
+- Updated documentation and recorded new Youtube tutorial videos
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+v1.0
+First release.
